@@ -19,8 +19,8 @@ class ConverterTests: XCTestCase {
         XCTAssertEqual(result, "I", "Conversion for 1 is incorrect")
     }
 
-    func testToBeFailed() {
+    func testToBeSucceeded() {
         let result = converter.convert(1)
-        XCTAssertEqual(result, "II", "Conversion for 1 is incorrect")
+        XCTAssertEqual(result, "I", "Conversion for 1 is incorrect")
     }
 }
