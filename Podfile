@@ -5,7 +5,7 @@ target 'Numero' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Numero
+  pod 'Kingfisher', '~> 6.0'
 
   target 'NumeroTests' do
     inherit! :search_paths
