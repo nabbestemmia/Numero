@@ -2,6 +2,10 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :generate_ipa_develop do
+  cocoapods(
+      clean_install: true,
+      podfile: "./Podfile"
+    )
     build_ios_app(
       configuration: "Debug",
       scheme: "Numero",
