@@ -6,7 +6,8 @@ platform :ios do
     match(
       type: 'appstore', 
       app_identifier: ['it.agricolasalvatori.Numero'],
-      git_url: 'https://github.com/nabbestemmia/NumeroCertificatesAndProfiles'
+      git_url: 'https://github.com/nabbestemmia/NumeroCertificatesAndProfiles',
+      username: 'alessio@bemind.me'
       )
       cocoapods(
       clean_install: true,
