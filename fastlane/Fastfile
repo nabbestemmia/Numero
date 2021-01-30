@@ -26,6 +26,9 @@ platform :ios do
   end
 
   lane :release do
+
+    generate_ipa_distribution
+
     api_key = app_store_connect_api_key(
       key_id: "ZSQSTQH5HP",
       issuer_id: "69a6de94-1373-47e3-e053-5b8c7c11a4d1",
