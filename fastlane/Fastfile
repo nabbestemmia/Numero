@@ -3,7 +3,11 @@ platform :ios do
 
   desc "Generates ipa"
   lane :generate_ipa_distribution do
-    match(type: 'appstore', app_identifier: ['it.agricolasalvatori.Numero'])
+    match(
+      type: 'appstore', 
+      app_identifier: ['it.agricolasalvatori.Numero'],
+      git_url: 'https://github.com/nabbestemmia/NumeroCertificatesAndProfiles'
+      )
       cocoapods(
       clean_install: true,
       podfile: "./Podfile"
