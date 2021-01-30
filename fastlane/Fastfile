@@ -7,7 +7,8 @@ platform :ios do
       type: 'appstore', 
       app_identifier: ['it.agricolasalvatori.Numero'],
       git_url: 'https://github.com/nabbestemmia/NumeroCertificatesAndProfiles',
-      username: 'alessio@bemind.me'
+      username: 'antonio.cacciotti@gmail.com',
+      generate_apple_certs: false
       )
       cocoapods(
       clean_install: true,
