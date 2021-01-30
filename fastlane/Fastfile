@@ -23,42 +23,20 @@ platform :ios do
          output_name: 'Numero.ipa',
          export_method: 'app-store'
       )
-
-  # cocoapods(
-  #     clean_install: true,
-  #     podfile: "./Podfile"
-  #   )
-  #   build_ios_app(
-  #     configuration: "Release",
-  #     scheme: "Numero",
-  #     clean: true,
-  #     export_method: 'app-store',
-  #     output_directory: "~/Desktop",
-  #     output_name: "Numero.ipa",
-  #   )
   end
+
   lane :release do
-    pilot(
+    api_key = app_store_connect_api_key(
       key_id: "ZSQSTQH5HP",
       issuer_id: "69a6de94-1373-47e3-e053-5b8c7c11a4d1",
-      key_filepath: "./AuthKey_ZSQSTQH5HP.p8",
-      duration: 1200,
-      in_house: false,
-      username: ENV["alessio@bemind.me"],
-      wait_processing_interval: 30
+      key_filepath: "./fastlane/AuthKey_ZSQSTQH5HP.p8"
     )
-    pilot(
-   username: "alessio@bemind.me",
-   team_id: "app store connect team id",
-   app_identifier: 'com.max.MyAwesomeApp',
-   app_platform: 'ios',
-   ipa: "archives/MyAwesomeApp.ipa",
-   skip_waiting_for_build_processing: true
-)
+      pilot(
+        api_key: api_key,
+        app_identifier: 'it.agricolasalvatori.Numero',
+        app_platform: 'ios',
+        ipa: "~/Desktop/Numero.ipa",
+        skip_waiting_for_build_processing: true
+    )
   end
-
-  # pilot
-  #   lane :release do
-  #     pilot( api_key_path: "fastlane/ZSQSTQH5HP.json" )
-  # end
 end
