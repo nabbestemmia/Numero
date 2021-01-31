@@ -469,7 +469,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 864XXG9CW6;
 				INFOPLIST_FILE = Numero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -489,7 +489,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution: Antonio Cacciotti (864XXG9CW6)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: Antonio Cacciotti (864XXG9CW6)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 864XXG9CW6;
 				INFOPLIST_FILE = Numero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

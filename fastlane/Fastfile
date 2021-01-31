@@ -19,7 +19,7 @@ platform :ios do
          scheme: 'Numero',
          configuration: 'Release',
          clean: true,
-         output_directory: '~/Desktop',
+         output_directory: 'archives',
          output_name: 'Numero.ipa',
          export_method: 'app-store'
       )
@@ -38,7 +38,7 @@ platform :ios do
         api_key: api_key,
         app_identifier: 'it.agricolasalvatori.Numero',
         app_platform: 'ios',
-        ipa: "~/Desktop/Numero.ipa",
+        ipa: "archives/Numero.ipa",
         skip_waiting_for_build_processing: true
     )
   end
